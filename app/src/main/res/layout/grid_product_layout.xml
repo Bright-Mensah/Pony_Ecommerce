@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="405dp"
+    android:background="@drawable/grid_backround"
+    android:layout_margin="8dp"
+    android:elevation="3dp">
+
+
+    <TextView
+        android:id="@+id/gridItems_layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="16dp"
+        android:text="Title"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+
+
+    <Button
+        android:id="@+id/gridItem_ViewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:text="View All"
+        android:textSize="12sp"
+        android:textColor="@color/color_white"
+        android:backgroundTint="@color/colorPrimaryRed"/>
+
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D5D5D5"
+        android:horizontalSpacing="1dp"
+        android:numColumns="2"
+        android:verticalSpacing="1dp"
+        android:layout_below="@id/gridItem_ViewAll"/>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    android:elevation="3dp"
+    android:foregroundTint="@color/color_white">
+
+
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="2dp"
+    android:elevation="20dp"
+    android:focusable="true"
+    android:fitsSystemWindows="true"
+    android:contentDescription="?attr/content"
+    android:background="@color/color_white"
+    android:foreground="?attr/selectableItemBackgroundBorderless">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:id="@+id/cart_femaleDress_icon"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/home_foreground"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/cart_femaleDress_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="home"
+            android:layout_below="@id/cart_femaleDress_icon"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"/>
+
+
+        <TextView
+            android:id="@+id/cart_femaleDress_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="price"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_below="@id/cart_femaleDress_Name"
+            android:textColor="@color/succcessGreen"/>
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+</RelativeLayout>

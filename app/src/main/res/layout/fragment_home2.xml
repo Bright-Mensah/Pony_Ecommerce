@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.HomeFragment"
+    android:background="@color/color_white">
+
+
+     <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/home_category_recyclerview"
+       android:layout_width="match_parent"
+       android:layout_height="76dp"
+       android:background="@drawable/grid_backround"
+       android:elevation="3dp"/>
+
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        android:id="@+id/scrollview"
+        android:layout_below="@id/home_category_recyclerview"
+        android:scrollbarStyle="outsideInset">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@android:color/black"/>
+
+
+
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_Indicator"
+                android:layout_width="150dp"
+                android:layout_height="18dp"
+                android:layout_below="@id/viewPager"
+                android:layout_centerHorizontal="true"
+                app:tabGravity="center"
+                app:tabBackground="@drawable/indicator_selector"
+                app:tabIndicatorColor="@android:color/transparent"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/shoes_display_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/tab_Indicator"/>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/strip_AdRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shoes_display_recyclerView"/>
+
+
+
+            <!--display female dresses in the recyclerview in grid style -->
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/strip_AdRecyclerView"
+               android:id="@+id/relativeForGridItems"
+               android:padding="5dp">
+
+               <include
+                   layout="@layout/grid_product_layout"/>
+
+           </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/second_strip_AdRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/relativeForGridItems"
+                android:layout_marginTop="20dp"/>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+

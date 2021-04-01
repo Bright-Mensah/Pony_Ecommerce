@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "520559735059",
+    "project_id": "protean-booth-304502",
+    "storage_bucket": "protean-booth-304502.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520559735059:android:5d1a5cb37876d0e4fceae6",
+        "android_client_info": {
+          "package_name": "com.example.pony_ecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "520559735059-f23pg5g2bm4b5dno03cfpa97rc1c53u2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1xD5psh2pAJgVCnzDo9GUa_ymi7i7tXE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "520559735059-f23pg5g2bm4b5dno03cfpa97rc1c53u2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

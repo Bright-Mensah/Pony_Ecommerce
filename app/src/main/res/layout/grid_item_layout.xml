@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/grid_backround"
+    android:elevation="3dp">
+
+    <ImageView
+        android:id="@+id/grid_dressImage"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/cart_shoe"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/grid_dressName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cooking Oil"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/grid_dressImage"/>
+
+    <TextView
+        android:id="@+id/grid_dressPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="low Calastrol"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/succcessGreen"
+        android:textSize="10sp"
+        android:layout_below="@id/grid_dressName"/>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Categories.categorySportingGoods">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/grid_backround">
+
+
+        <TextView
+            android:id="@+id/sportingGoods_category_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"/>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/sportingGoods_recyclerview_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/sportingGoods_category_title"
+            android:layout_marginTop="15dp" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

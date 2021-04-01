@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PurchasingGoods.purchaseFemaleDress">
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/purchasingRecyclerView"
+          android:layout_width="match_parent"
+          android:layout_height="250dp"/>
+
+
+
+      <TextView
+          android:id="@+id/purchaseName"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/purchasingRecyclerView"
+          android:text="Name"
+          android:layout_centerHorizontal="true"
+          android:textColor="@android:color/black"/>
+
+
+
+      <TextView
+          android:id="@+id/purchasePrice"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/purchaseName"
+          android:text="Price"
+          android:layout_marginTop="10dp"
+          android:layout_centerHorizontal="true"
+          android:textColor="@android:color/black"/>
+
+
+
+      <TextView
+          android:id="@+id/purchaseQuantity"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="quantity"
+          android:layout_below="@id/purchasePrice"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="20dp"
+          android:textColor="@android:color/black"
+          android:textStyle="bold"
+          android:textSize="20sp"/>
+
+
+
+
+      <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+          android:id="@+id/btnIncreaseAndDecrease"
+          android:layout_width="match_parent"
+          android:layout_height="80dp"
+          android:layout_below="@id/purchaseQuantity"
+          android:layout_marginLeft="60dp"
+          android:layout_marginRight="60dp"
+          android:textColor="@color/succcessGreen"
+          android:gravity="center"
+          />
+
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Location"
+          android:layout_below="@id/btnIncreaseAndDecrease"
+          android:layout_toLeftOf="@id/locationSpinner"
+          android:layout_marginRight="40dp"
+          android:layout_marginTop="3dp"
+          android:textStyle="bold"
+          android:textColor="@android:color/black"/>
+
+
+      <Spinner
+          android:id="@+id/locationSpinner"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:dropDownSelector="@color/colorPrimaryRed"
+          android:entries="@array/location"
+          android:layout_below="@id/btnIncreaseAndDecrease"
+          android:layout_centerHorizontal="true"/>
+
+
+
+
+
+      <EditText
+          android:id="@+id/purchasePhone"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:hint="Phone"
+          android:layout_below="@id/locationSpinner"
+          android:layout_marginTop="30dp"
+          android:textAlignment="center"
+          android:background="@drawable/search_background"
+          android:layout_marginLeft="70dp"
+          android:layout_marginRight="70dp"/>
+
+
+      <Button
+          android:id="@+id/btnPurchase"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/purchasePhone"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="39dp"
+          android:backgroundTint="@android:color/black"
+          android:text="Purchase"
+          android:textColor="@color/color_white"/>
+
+   </RelativeLayout>
+
+</FrameLayout>
